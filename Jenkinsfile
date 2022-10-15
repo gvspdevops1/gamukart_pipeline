@@ -2,13 +2,11 @@ pipeline {
   agent none
     stages {
 	  stage("Checkout") {
-        agent any
         steps {
           sh 'https://github.com/gvspdevops1/gamukart_pipeline.git'
         }
       }
 	  stage("build ") {
-        agent any
         steps {      
           sh 'mvn clean install'        
         }
