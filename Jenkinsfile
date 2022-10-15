@@ -4,12 +4,12 @@ pipeline {
 	  stage("Checkout") {
 
 	  parallel (
-	    stage(parallel1) {
+	    stage("parallel1") {
 	      steps {
 	        sh "echo pararrel1"
 	      }
 	    }
-	    stage(parallel2) {
+	    stage("parallel2") {
 	      steps {
 	        sh "echo pararrel2"
 	      }
