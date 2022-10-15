@@ -2,8 +2,8 @@ pipeline {
   agent any
     stages {
 	  stage("Checkout") {
-        steps {
-	  parallel {
+
+	  parallel (
 	    stage(parallel1) {
 	      steps {
 	        sh "echo pararrel1"
@@ -14,9 +14,7 @@ pipeline {
 	        sh "echo pararrel2"
 	      }
 	    }
-	 }
-          sh 'git clone https://github.com/gvspdevops1/gamukart_pipeline.git'
-        }
+	 )
       }
 	  stage("build ") {
         steps {      
