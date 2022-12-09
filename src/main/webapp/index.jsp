@@ -27,7 +27,7 @@
 	<div class="container">
 
 		<header>
-			<h1>DEVOPS trianing Solutions Pvt Ltd . DEVOPS-TRAINING: 8142420333 (SivaPrasad ) ...</h1>
+			<h1>DEVOPS trianing Solutions Pvt Ltd . DEVOPS-TRAINING: 8142420333 (GV SivaPrasad ) ...</h1>
 		</header>
 
 		<div id="tabs">
