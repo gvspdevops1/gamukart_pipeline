@@ -1,18 +1,23 @@
 pipeline {
   agent any
     stages {
-	    
-      stage ("checkout") {
-	steps {
-	  bat 'git clone https://github.com/gvspdevops1/gamukart_pipeline.git'
-        }  
-      }
-	    
+ 
       stage("build only") {
         steps {      
           bat 'mvn clean install'        
         }
       }
+      stage("stage1") {
+	  steps {
+	    bat 'echo stage1
+	  
+	  }
+	}
+	stage("stage2") {
+	  steps {
+            bat 'echo stage 2' 
+	  }
+	} 
 	    
     }
 }
