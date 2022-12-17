@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.cangksolutions</groupId>
-	<artifactId>cangk-staragile</artifactId>
+	<artifactId>cangk</artifactId>
 	<packaging>jar</packaging>
 	<version>1.1-RELEASE</version>
 
