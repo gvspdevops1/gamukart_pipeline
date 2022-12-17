@@ -9,8 +9,7 @@ pipeline {
       }
       stage("stage1") {
 	  steps {
-	    bat 'echo stage1
-	  
+	    bat 'echo stage1'
 	  }
 	}
 	stage("stage2") {
