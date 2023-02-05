@@ -3,7 +3,7 @@ pipeline {
   stages {
 	stage("Checkout") {
       steps {
-        sh 'git clone https://github.com/gvsiva2008/tomact-jenkins.git '
+        sh 'git clone https://github.com/gvspdevops1/gamukart_pipeline.git '
       }
 	}
 	stage("build ") {
