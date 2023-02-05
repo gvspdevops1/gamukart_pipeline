@@ -14,14 +14,14 @@ pipeline {
     stage("Build Image") {
       steps {     
 	sh 'whoami'      
-    sh 'sudo docker build -t gvsiva2008/tomact-jenkins .'
+        sh 'docker build -t gvsiva2008/tomact-jenkins .'
       }
     }
     stage("pushtoHub") { 
         steps{
            withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
-             sh "sudo docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-             sh 'sudo docker push gvsiva2008/tomact-jenkins:latest'
+             sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
+             sh 'docker push gvsiva2008/tomact-jenkins:latest'
            }
         }
      }
