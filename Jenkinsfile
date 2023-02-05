@@ -11,6 +11,11 @@ pipeline {
         sh 'mvn clean install'
       }
     }
+    stage("terraform") {
+      steps {         
+        sh 'terraform apply -auto-approve'
+      }
+    }
     stage("Build Image") {
       steps {     
 	sh 'whoami'      
