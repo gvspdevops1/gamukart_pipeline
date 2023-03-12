@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage("Checkout") {
       steps {
-        sh 'git clone https://github.com/gvspdevops1/gamukart_pipeline.git '
+        bat 'git clone https://github.com/gvspdevops1/gamukart_pipeline.git '
       }
     }
     stage("build ") {
       steps {     
-        sh 'mvn clean install'
+        bat 'mvn clean install'
       }
     }
     //stage("terraform") {
