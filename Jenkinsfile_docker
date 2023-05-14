@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("Checkout") {
       steps {
-        sh 'git clone https://github.com/gvspdevops1/gamukart_pipeline.git '
+        sh 'echo checkout done '
       }
     }
     stage("build ") {
