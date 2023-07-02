@@ -40,7 +40,7 @@ pipeline {
     stage("Build Image") {
       steps {     
 	sh 'whoami'      
-        sh 'docker build -t gvsiva2008/jenkins_docker .'
+        sh 'docker build -t gvsiva2008/jenkins_july .'
       }
     }
     stage("pushtoHub") { 
