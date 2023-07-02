@@ -47,7 +47,7 @@ pipeline {
         steps{
            withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
              sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-             sh 'docker push gvsiva2008/jenkins_docker:latest'
+             sh 'docker push gvsiva2008/jenkins_july:latest'
            }
         }
      }
