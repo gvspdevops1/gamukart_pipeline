@@ -4,7 +4,7 @@
 	
 	<groupId>com.cangksolutions</groupId>
 	<artifactId>cangk</artifactId>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<version>1.1-RELEASE</version>
 
 	<dependencies>
