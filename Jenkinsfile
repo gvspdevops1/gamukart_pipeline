@@ -18,7 +18,7 @@ pipeline {
     }
     stage("stage5 ") {
       steps {     
-        sh 'echo stage 5 completed '
+        bat 'echo stage 5 completed '
       }
     }
     stage("stage6 ") {
